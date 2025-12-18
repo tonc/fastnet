@@ -11,16 +11,17 @@ docker pull xkand/fastnet:latest
 
 2. 运行容器：
 ```bash
-docker run -d \
+ docker run -itd \
   --name fastnet \
   --restart always \
   --network host \
+  -e PORT=8181 \
   xkand/fastnet:latest
 ```
 
 3. 访问服务：
 ```
-http://ip:8080
+http://ip:8181
 ```
 
 ## 🐳 镜像信息
