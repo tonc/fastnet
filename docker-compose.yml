@@ -1,0 +1,8 @@
+services:
+  fastnet:
+    image: xkand/fastnet
+    container_name: fastnet
+    restart: always
+    environment:
+      - PORT=8181
+    network_mode: host
