@@ -25,7 +25,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        file: ./Dockefile
+        file: ./Dockerfile
         platforms: linux/amd64,linux/arm64,linux/arm/v7
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/fastnet:latest
